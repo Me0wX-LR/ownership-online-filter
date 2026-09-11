@@ -53,17 +53,6 @@ Open **Configure Ownership** on any document.
 
 Show Players is a table action. Fine-grained edits still use the per-user dropdowns and Save Changes.
 
-## Local sandbox
-
-This repository includes a Vite playground that loads the real module against a mocked Foundry dialog. A Foundry license is not required to try the UI.
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://127.0.0.1:43147](http://127.0.0.1:43147). Toggle player presence in the side panel to exercise the `userConnected` refresh path. Resize the dialog to confirm the size is remembered.
-
 ## Development
 
 | Path | Role |
