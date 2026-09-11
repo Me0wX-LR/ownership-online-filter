@@ -6,6 +6,8 @@ It keeps Foundry’s per-user ownership editors as the source of truth, then add
 
 Compatible with Foundry **v12–v14** (verified 14).
 
+<img width="850" height="525" alt="image" src="https://github.com/user-attachments/assets/2ffe7d58-1561-4e58-bd28-1462e4b58601" />
+
 ## Features
 
 - Online / offline pip and label on every user row
