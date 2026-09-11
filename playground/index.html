@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ownership Online Filter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="kicker">Foundry VTT module sandbox</p>
+        <h1>Ownership Online Filter</h1>
+        <p class="lede">
+          Local preview of the Ownership Configuration dialog: online pips,
+          hide-offline, search, bulk set, a resizable window, and Show Players
+          for connected users.
+        </p>
+      </header>
+
+      <div class="layout">
+        <section class="tabletop" aria-label="Ownership configuration preview">
+          <div id="dialog-host"></div>
+        </section>
+
+        <aside class="panel">
+          <section>
+            <h2>World players</h2>
+            <p class="hint">
+              Toggle presence the way Foundry’s <code>userConnected</code> hook
+              would. The GM always stays visible, even with Hide Offline on.
+            </p>
+            <ul id="presence-list" class="presence-list"></ul>
+          </section>
+
+          <section>
+            <h2>Language</h2>
+            <div class="lang-switch">
+              <label for="lang-select">Client language</label>
+              <select id="lang-select" aria-label="Interface language">
+                <option value="en">English</option>
+                <option value="zh-Hant">正體中文</option>
+                <option value="zh-Hans">简体中文</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+              </select>
+            </div>
+          </section>
+
+          <section>
+            <h2>What to try</h2>
+            <ul class="checklist">
+              <li>Search, hide offline, and drag the dialog corner to resize it.</li>
+              <li>Set Connected Players to Observer, then click Show Players.</li>
+              <li>Switch language — the core hint and Show card follow Foundry’s client language.</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

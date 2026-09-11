@@ -1,0 +1,43 @@
+{
+  "id": "ownership-online-filter",
+  "title": "Ownership Online Filter",
+  "description": "Online status, hide-offline, search, bulk ownership, resizable window, and Show Players integration for the Document Ownership Configuration dialog.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "meowleftandright (喵佐)",
+      "url": "https://github.com/Me0wX-LR"
+    }
+  ],
+  "url": "https://github.com/Me0wX-LR/ownership-online-filter",
+  "bugs": "https://github.com/Me0wX-LR/ownership-online-filter/issues",
+  "manifest": "https://raw.githubusercontent.com/Me0wX-LR/ownership-online-filter/main/module.json",
+  "download": "https://github.com/Me0wX-LR/ownership-online-filter/archive/refs/heads/main.zip",
+  "esmodules": [
+    "scripts/module.mjs"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "zh-TW", "name": "正體中文", "path": "lang/zh-Hant.json" },
+    { "lang": "zh-Hant", "name": "正體中文", "path": "lang/zh-Hant.json" },
+    { "lang": "zh-Hans", "name": "简体中文", "path": "lang/zh-Hans.json" },
+    { "lang": "zh-CN", "name": "简体中文", "path": "lang/zh-Hans.json" },
+    { "lang": "cn", "name": "简体中文", "path": "lang/zh-Hans.json" },
+    { "lang": "ja", "name": "日本語", "path": "lang/ja.json" },
+    { "lang": "ko", "name": "한국어", "path": "lang/ko.json" },
+    { "lang": "de", "name": "Deutsch", "path": "lang/de.json" },
+    { "lang": "es", "name": "Español", "path": "lang/es.json" },
+    { "lang": "fr", "name": "Français", "path": "lang/fr.json" },
+    { "lang": "it", "name": "Italiano", "path": "lang/it.json" },
+    { "lang": "pl", "name": "Polski", "path": "lang/pl.json" },
+    { "lang": "pt-BR", "name": "Português (Brasil)", "path": "lang/pt-BR.json" },
+    { "lang": "ru", "name": "Русский", "path": "lang/ru.json" }
+  ]
+}

@@ -1,0 +1,167 @@
+.ownership-config,
+.application.ownership-config,
+.window-app.ownership-config {
+  min-width: 28rem;
+}
+
+.oof-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 0.6rem 0;
+  padding: 0.35rem 0.15rem 0.5rem;
+  border-bottom: 1px solid var(--color-border-light-tertiary, #4b4a44);
+}
+
+.oof-toolbar .oof-search {
+  flex: 1 1 10rem;
+  min-width: 8rem;
+  height: 1.8rem;
+}
+
+.oof-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.oof-toggle input {
+  margin: 0;
+}
+
+.oof-connected {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.oof-connected label {
+  flex: 0 0 auto;
+  font-weight: 600;
+}
+
+.oof-connected select {
+  flex: 1 1 auto;
+}
+
+.oof-count {
+  width: 100%;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.oof-user-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.oof-pip {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.oof-pip.online {
+  background: #3dd68c;
+}
+
+.oof-pip.offline {
+  background: #6b6b6b;
+}
+
+.oof-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.oof-status {
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  opacity: 0.7;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.oof-hidden,
+.ownership-config .form-group.oof-hidden,
+.application.ownership-config .form-group.oof-hidden,
+.window-app.ownership-config .form-group.oof-hidden {
+  display: none !important;
+}
+
+.ownership-config .form-group.oof-row,
+.application.ownership-config .form-group.oof-row {
+  align-items: center;
+}
+
+.oof-show {
+  margin: 0.75rem 0 0.35rem;
+  padding: 0.7rem 0.8rem 0.85rem;
+  border: 1px solid var(--color-border-light-primary, var(--color-border-light-tertiary, #5c574d));
+  border-radius: 0.35rem;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.oof-show h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.oof-show .notes {
+  margin: 0 0 0.6rem;
+  opacity: 0.78;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.oof-show-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.oof-show-row label {
+  flex: 0 0 auto;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.oof-show-row select {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.oof-show-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+}
+
+.oof-show-submit svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ownership-config footer,
+.ownership-config .sheet-footer,
+.ownership-config .form-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  align-items: center;
+}
