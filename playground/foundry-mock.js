@@ -2,14 +2,6 @@ import en from "../lang/en.json";
 import zhHant from "../lang/zh-Hant.json";
 import zhHans from "../lang/zh-Hans.json";
 import ja from "../lang/ja.json";
-import ko from "../lang/ko.json";
-import de from "../lang/de.json";
-import es from "../lang/es.json";
-import fr from "../lang/fr.json";
-import it from "../lang/it.json";
-import pl from "../lang/pl.json";
-import ptBR from "../lang/pt-BR.json";
-import ru from "../lang/ru.json";
 
 const PACKS = {
   en,
@@ -18,15 +10,7 @@ const PACKS = {
   "zh-Hans": zhHans,
   "zh-CN": zhHans,
   cn: zhHans,
-  ja,
-  ko,
-  de,
-  es,
-  fr,
-  it,
-  pl,
-  "pt-BR": ptBR,
-  ru
+  ja
 };
 
 const LEVELS = Object.freeze({
