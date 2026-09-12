@@ -21,7 +21,7 @@ Compatible with Foundry **v12–v14** (verified 14).
   - Higher ownership is never reduced by the show step
 - Core chrome is localized (`OWNERSHIP.HintDocument`, title, All Players, Show GM Users)
 - The dialog is resizable; width and height are stored as a client setting and restored the next time it opens
-- Language packs for English, Traditional Chinese, Simplified Chinese, Japanese, Korean, and the common Foundry core-translation languages (German, Spanish, French, Italian, Polish, Brazilian Portuguese, Russian)
+- Language packs for English, Traditional Chinese, Simplified Chinese, Japanese
 
 ## Install
 
