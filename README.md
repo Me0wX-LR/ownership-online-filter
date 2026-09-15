@@ -61,35 +61,6 @@ Open **Configure Ownership** on any document.
 
 Show Players is a table action. Fine-grained edits still use the per-user dropdowns and Save Changes.
 
-## Development
-
-| Path | Role |
-| --- | --- |
-| `scripts/module.mjs` | Foundry module (hooks into `DocumentOwnershipConfig`) |
-| `styles/module.css` | Dialog, toolbar, and Show Players styles |
-| `lang/` | Localization packs |
-| `module.json` | Foundry manifest |
-| `playground/` | Local sandbox only; not loaded by Foundry |
-| `tools/pack-release.mjs` | Builds `dist/module.zip` for a GitHub Release |
-
-Each Foundry listing row must point at **that version’s** pinned `module.json`, not at `main`. That is how 1.1.0 stays downloadable after 1.1.1.
-
-1. Bump `"version"` in `module.json` (for example `1.1.1`).
-2. Set `"download"` to `https://github.com/Me0wX-LR/ownership-online-filter/releases/download/1.1.1/module.zip`. Leave `"manifest"` as `releases/latest/download/module.json`.
-3. Commit, tag `1.1.1` (no `v`), and push the commit **and** the tag.
-4. Run `npm run pack` to build `dist/module.zip` and `dist/module.json`. Do not include `playground/`, `node_modules/`, or `tools/`.
-5. Create a GitHub Release on that tag and attach **both** `module.json` and `module.zip`.
-6. In Foundry Package Admin, **add a new version row**. Do not edit the 1.1.0 row.
-
-| Foundry field | 1.1.0 | Later, 1.1.1 |
-| --- | --- | --- |
-| Version Number | `1.1.0` | `1.1.1` |
-| Package Manifest URL | `https://github.com/Me0wX-LR/ownership-online-filter/releases/download/1.1.0/module.json` | `.../releases/download/1.1.1/module.json` |
-| Release Notes URL | `https://github.com/Me0wX-LR/ownership-online-filter/releases/tag/1.1.0` | `.../releases/tag/1.1.1` |
-| Minimum Core Version | `12` | same unless compatibility changed |
-| Verified Core Version | `14` | update if you re-tested |
-| Maximum Core Version | leave blank | leave blank unless a newer Foundry is known-broken |
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
